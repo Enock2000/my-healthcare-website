@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living - Your Guide to Wellness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .header-bg {
+            background-color: #12af2c;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-primary {
+            background-color: #4A90E2;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #357ABD;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #4A90E2, #7B68EE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-slide-in {
+            animation: slideInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header -->
+    <header class="header-bg text-white py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold rounded-lg">HealthyLiving</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#health-tips" class="hover:text-gray-200">Health Tips</a></li>
+                    <li><a href="#recipes" class="hover:text-gray-200">Recipes</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center mb-16 animate-slide-in">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-gradient">Your Journey to Wellness Starts Here</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Discover a healthier you with our expert-curated health tips and delicious, nutritious recipes. We're here to guide you every step of the way.
+            </p>
+            <div class="mt-8">
+                <a href="#health-tips" class="inline-block btn-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">Explore Now</a>
+            </div>
+        </section>
+
+        <!-- Health Tips Section -->
+        <section id="health-tips" class="mb-16">
+            <h3 class="text-4xl font-bold text-center mb-10 text-gray-800">General Health Tips</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Tip 1 -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-200">
+                    <img src="https://placehold.co/400x250/F4F7FD/5D9EE9?text=Stay+Hydrated" alt="Stay Hydrated" class="rounded-xl mb-4 w-full">
+                    <h4 class="text-2xl font-semibold mb-2">Stay Hydrated</h4>
+                    <p class="text-gray-600">
+                        Drinking an adequate amount of water daily is crucial for your overall health. It helps in maintaining bodily functions, regulating temperature, and transporting nutrients.
+                    </p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-200">
+                    <img src="https://placehold.co/400x250/F4F7FD/5D9EE9?text=Balanced+Diet" alt="Eat a Balanced Diet" class="rounded-xl mb-4 w-full">
+                    <h4 class="text-2xl font-semibold mb-2">Eat a Balanced Diet</h4>
+                    <p class="text-gray-600">
+                        A diet rich in fruits, vegetables, lean proteins, and whole grains provides your body with the essential vitamins and minerals it needs to thrive.
+                    </p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-200">
+                    <img src="https://placehold.co/400x250/F4F7FD/5D9EE9?text=Regular+Exercise" alt="Exercise Regularly" class="rounded-xl mb-4 w-full">
+                    <h4 class="text-2xl font-semibold mb-2">Exercise Regularly</h4>
+                    <p class="text-gray-600">
+                        Regular physical activity strengthens your heart, improves your mood, and helps you maintain a healthy weight. Aim for at least 30 minutes a day.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Healthy Recipes Section -->
+        <section id="recipes" class="mb-16">
+            <h3 class="text-4xl font-bold text-center mb-10 text-gray-800">Healthy Recipes</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Recipe 1 -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-200">
+                    <img src="https://placehold.co/600x400/F0F4F8/3B82F6?text=Quinoa+Salad" alt="Quinoa Salad" class="rounded-xl mb-4 w-full">
+                    <h4 class="text-2xl font-semibold mb-2">Mediterranean Quinoa Salad</h4>
+                    <p class="text-gray-600">
+                        A refreshing and protein-packed salad with quinoa, chickpeas, cucumbers, and a zesty lemon dressing.
+                    </p>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-200">
+                    <img src="https://placehold.co/600x400/F0F4F8/3B82F6?text=Grilled+Salmon" alt="Grilled Salmon" class="rounded-xl mb-4 w-full">
+                    <h4 class="text-2xl font-semibold mb-2">Grilled Salmon with Asparagus</h4>
+                    <p class="text-gray-600">
+                        Rich in Omega-3 fatty acids, this dish is both delicious and excellent for heart health.
+                    </p>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-200">
+                    <img src="https://placehold.co/600x400/F0F4F8/3B82F6?text=Avocado+Toast" alt="Avocado Toast" class="rounded-xl mb-4 w-full">
+                    <h4 class="text-2xl font-semibold mb-2">Avocado & Egg Toast</h4>
+                    <p class="text-gray-600">
+                        A quick and easy breakfast full of healthy fats and protein to kickstart your day.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-10 md:p-16 rounded-3xl card border border-gray-200 animate-slide-in">
+            <h3 class="text-4xl font-bold text-center mb-6 text-gray-800">Contact Us</h3>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+                Have a question or want to share your health journey? Reach out to us using the form below.
+            </p>
+            <form action="#" method="POST" class="max-w-xl mx-auto space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@example.com" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message..." required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary text-white font-semibold py-3 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 HealthyLiving. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
